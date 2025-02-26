@@ -1,4 +1,4 @@
-export default class cl_Tienda{
+export default class cl_mTienda{
     constructor() {
         this.acumG = 0;
         this.Mprecio = 0;

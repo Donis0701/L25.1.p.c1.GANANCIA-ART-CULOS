@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div id="salida"></div>
-   <script src="js/principal.js" type="module"></script> 
+    <section id="articuloForm">
+    <h3>Información del articulo</h3>
+    <input type="text" id="articuloForm_inCodigo" placeholder="Codigo" />
+    <input type="text" id="articuloForm_inCosto" placeholder="Costo" />
+    <input type="text" id="articuloForm_inPrecio" placeholder="Precio" />
+    <button id="articuloForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+    <h3>Reporte de la tienda</h3>
+        <div id="mainForm_salida"></div>
+    </section>
 </body>
+<script type="module">
+    import cl_principal from "./js/principal.js";
+    new cl_principal();
+</script>
 </html>
